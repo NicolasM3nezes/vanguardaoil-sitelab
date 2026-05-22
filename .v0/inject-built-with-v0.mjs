@@ -4,12 +4,7 @@ const anchor = Buffer.from("ey8qIHYwIC0gYnVpbHQtd2l0aCBiYWRnZSAqL30KICA8ZGl2IGRh
 const url = "https://www.agenciasitelab.com.br/"
 const badgePattern = new RegExp(Buffer.from("XG4/XHMqXHtcL1wqIHYwIFstXHUyMDEzXSBidWlsdC13aXRoIGJhZGdlIFwqXC9cfVxzKlxuXHMqPGRpdiBkYW5nZXJvdXNseVNldElubmVySFRNTD1ce1x7IF9faHRtbDogYFtcc1xTXSo/YCBcfVx9IFwvPg==", 'base64').toString('utf8'), 'g')
 const layoutCandidates = [
-  'app/layout.tsx',
-  'app/layout.jsx',
-  'app/layout.js',
-  'src/app/layout.tsx',
-  'src/app/layout.jsx',
-  'src/app/layout.js',
+  
 ]
 const layoutPath = layoutCandidates.find((candidate) => fs.existsSync(candidate))
 
